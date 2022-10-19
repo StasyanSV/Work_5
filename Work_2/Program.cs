@@ -21,6 +21,7 @@ void PrintMass(int[] array)
     {
         Console.Write($"{array[i]} ");
     }
+    Console.WriteLine();
 }
 
 int SumNegativeIndex(int[] array)
@@ -41,6 +42,4 @@ int SumNegativeIndex(int[] array)
 int[] array = GetArray(6, -100, 100);
 // SumNegativeIndex(array);
 PrintMass(array);
-
-Console.WriteLine($"");
 Console.WriteLine($"{SumNegativeIndex(array)} ");

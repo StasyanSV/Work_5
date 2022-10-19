@@ -10,9 +10,18 @@ int[] GetArray(int size, int minValue, int maxValue)
     for (int i = 0; i < size; i++)
     {
         res[i] = new Random().Next(minValue, maxValue + 1);
-        Console.Write($"{res[i]} ");
+        // Console.Write($"{res[i]} ");
     }
     return res;
+}
+
+void PrintMass(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
 }
 
 int SearchPositiveNumbers(int[] array)
@@ -29,7 +38,6 @@ int SearchPositiveNumbers(int[] array)
 }
 
 int[] array = GetArray(12, 100, 1000);
-SearchPositiveNumbers(array);
-
-Console.WriteLine($"");
+// SearchPositiveNumbers(array);
+PrintMass(array);
 Console.WriteLine($"{SearchPositiveNumbers(array)} ");
